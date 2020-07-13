@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        >
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radio_left"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:paddingLeft="45dp"
+                android:paddingRight="45dp"
+                android:button="@null"
+                android:background="@drawable/home_qbgd_details_left_selector"
+                android:textColor="@color/qbgd_week_selector"
+                android:text="人体"/>
+
+            <RadioButton
+                android:id="@+id/radio_right"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:paddingLeft="45dp"
+                android:paddingRight="45dp"
+                android:button="@null"
+                android:background="@drawable/home_qbgd_details_right_selector"
+                android:textColor="@color/qbgd_week_selector"
+                android:text="列表"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <android.support.v4.view.ViewPager
+                android:id="@+id/guide_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <com.shizhefei.view.indicator.FixedIndicatorView
+                android:id="@+id/guide_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_horizontal|bottom"
+                />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radio_group2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            >
+            <RadioButton
+                android:id="@+id/radio_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:button="@null"
+                android:checked="true"
+                android:background="@drawable/services_icon_znfz_btman"
+                />
+            <RadioButton
+                android:id="@+id/radio_women"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/services_icon_znfz_btwomen"
+                android:button="@null"
+                />
+        </RadioGroup>
+    </RelativeLayout>
+
+
+</LinearLayout>

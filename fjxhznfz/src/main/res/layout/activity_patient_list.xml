@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title_layout" />
+
+    <ListView
+        android:id="@+id/listview_binduser"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="#F5F5F5"
+        android:divider="#9E9E9E"
+        android:dividerHeight="0.1dp"/>
+
+    <Button
+        android:id="@+id/btn_choose"
+        style="@style/base_button"
+        android:enabled="false"
+        android:text="@string/common_choose_patient" />
+
+</LinearLayout>

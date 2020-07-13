@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">掌上协和医院</string>
+    <string name="app_title">福建医科大学附属协和医院</string>
+
+    <!--公共-->
+    <string name="common_choose_patient">选择就诊人</string>
+    <string name="common_choose_patient_title">选择就诊人</string>
+
+    <string name="title_pay">充值</string>
+
+    <string name="text_name">姓\u3000\u3000名：</string>
+    <string name="text_number">卡\u3000\u3000号：</string>
+    <string name="text_balance">账户余额：</string>
+    <string name="text_recharge">充值余额：</string>
+    <string name="text_pay_type">支付方式：</string>
+    <string name="text_go_recharge">前往充值</string>
+
+    <string name="hint_input_recharge">请输入金额</string>
+
+</resources>

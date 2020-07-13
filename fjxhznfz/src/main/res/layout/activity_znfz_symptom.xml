@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F2F2F2"
+    >
+    <include
+        android:id="@+id/title"
+        layout="@layout/base_title_layout" />
+    <LinearLayout
+        android:id="@+id/tv_title"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_mzks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身体部位"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+    
+ 	<ListView 
+         android:id="@+id/symptom_list"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/tv_title"
+        android:layout_margin="10dp"
+        android:fadingEdge="none"
+        >
+    </ListView>
+
+</RelativeLayout>

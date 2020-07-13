@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2" >
+    <include layout="@layout/base_title_layout"
+        android:id="@+id/title"/>
+
+    <RelativeLayout 
+        android:id="@+id/result_title_area"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/title"
+        android:background="#B0DFE5"
+        >
+         <TextView
+            android:id="@+id/result_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="15dp"
+            android:text="就诊建议"
+            android:textColor="#5FADEC"
+            android:textSize="18sp" />
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+         android:id="@+id/result_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/white"
+        android:layout_below="@id/result_title_area"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/result_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textColor="#333"
+            android:textSize="18sp" />
+    </LinearLayout>
+    
+    
+    <RelativeLayout 
+        android:id="@+id/keshi_title_area"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/result_area"
+        android:layout_marginTop="20dp"
+        android:background="#B0DFE5"
+        android:visibility="gone"
+        >
+         <TextView
+            android:id="@+id/keshi_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="15dp"
+            android:text="推荐科室"
+            android:textColor="#5FADEC"
+            android:textSize="18sp" />
+        
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/keshi_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/white"
+        android:layout_below="@id/keshi_title_area"
+        android:orientation="vertical"
+        android:visibility="gone"
+         >
+         <ListView
+             android:id="@+id/listview"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"/>
+    </LinearLayout>
+    
+    
+   
+
+</RelativeLayout>
